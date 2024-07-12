@@ -106,6 +106,88 @@ h2{
     background-color: #574CBA;
 }
 
+
+body div h2{
+    font-size: 24px;
+    color: #fff;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+}
+body div p{
+    font-size: 16px;
+    font-weight: bold;
+    color: black    ;
+    -webkit-text-stroke-width: 0.   5px;
+    -webkit-text-stroke-color: white;
+}
+
+.cartao1{
+    border: 5px solid #0bacdd;
+    text-align: center;
+    background-color: #6fc9e4;         
+}
+.cartao1 p{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+ from {
+     margin-left: 100%;
+     width: 300%;
+      }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+      }
+ }
+
+.cartao2{
+    border: 5px solid #0c6903;
+    text-align: center;
+    background-color: #52b44a;
+    animation: fadein;
+}
+.cartao2:hover{
+    background-color: #0c6903;
+}
+.cartao3{
+    border: 5px solid #dd5b10;
+    text-align: center;
+    background-color: #e99b6d;
+ }
+ .cartao3 img{
+    animation: go-back 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+ }
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+.cartao4{
+    border: 5px solid #7704c4;
+    text-align: center;
+    background-color: #a63eeb;  
+}
+.cartao4:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.cartao5{
+    border: 5px solid #ddf317;
+    text-align: center;
+    background-color: #e8f577;
+}
+.cartao5:hover{
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+}
+
 .box{
     width: 200px;
     height: 200px;
